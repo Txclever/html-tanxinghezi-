@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            margin: 100px auto;
+            display: flex;
+            /* 控制主轴方向 */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+            /* 控制主轴上的伸缩项 */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* 控制侧轴 */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: baseline; */
+            /* flex-wrap: wrap; */
+            /* align-content: center; */
+        }
+
+        ul li {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* flex: grow shrink basis */
+            /* flex-grow: ; 只能使用在伸缩项宽度总和小于伸缩容器的时候*/
+            /* flex-shrink: 1; */
+            /* flex-basis: 100px; */
+        }
+
+        ul li:nth-child(2) {
+            background-color: green;
+            /* flex-shrink: 2; */
+            /* flex-basis: 200px; */
+        }
+
+        ul li:nth-child(3) {
+            background-color: yellow;
+            /* flex-shrink: 3; */
+            /* flex-basis: 300px; */
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+
+</html>
